@@ -15,9 +15,11 @@ class Welcome extends Component {
   }
 
   render() {
+    const { name, heroname } = this.props;
     return (
       <div>
-        <h1>hello</h1>
+        <h1>Name: {name}</h1>
+        <h3>Heroname: {heroname}</h3>
       </div>
     );
   }

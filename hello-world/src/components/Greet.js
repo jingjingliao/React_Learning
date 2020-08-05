@@ -1,11 +1,11 @@
 import React from "react";
 
-export const Greet = (props) => {
+const Greet = (props) => {
+  const { name, heroname } = props;
   return (
     <div>
-      <h1>Name: {props.name}</h1>
-      <h3>Heroname: {props.heroname}</h3>
-      <h5>Chilren: {props.children}</h5>
+      <h1>Name: {name}</h1>
+      <h3>Heroname: {heroname}</h3>
     </div>
   );
 };
