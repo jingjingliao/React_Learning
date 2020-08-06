@@ -9,17 +9,20 @@ class Welcome extends Component {
   }
 
   changeMessage() {
-    this.setState = {
-      message: "Thanks for clicking me!",
-    };
+    this.setState({
+      message: "Thank You!",
+    });
   }
 
   render() {
-    const { name, heroname } = this.props;
+    // const { name, heroname } = this.props;
     return (
       <div>
-        <h1>Name: {name}</h1>
-        <h3>Heroname: {heroname}</h3>
+        {/* <h1>Name: {name}</h1>
+        <h3>Heroname: {heroname}</h3> */}
+        <h1> {this.state.message}</h1>
+
+        <button onClick={() => this.changeMessage()}>Click!</button>
       </div>
     );
   }
